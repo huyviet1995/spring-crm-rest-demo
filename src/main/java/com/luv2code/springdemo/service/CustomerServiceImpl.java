@@ -19,6 +19,7 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	@Transactional
 	public List<Customer> getCustomers() {
+		System.out.println("Logging output from Viet --- getCustomers ---");
 		return customerDAO.getCustomers();
 	}
 
